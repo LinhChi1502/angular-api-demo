@@ -1,0 +1,23 @@
+<h1>Delete Product</h1>
+<table>
+  <tr>
+    <td>Id:</td>
+    <td>{{product.id}}</td>
+  </tr>
+  <tr>
+    <td>Name:</td>
+    <td>{{product.name}}</td>
+  </tr>
+  <tr>
+    <td>Des:</td>
+    <td>{{product.des}}</td>
+  </tr>
+  <tr>
+    <td>Price:</td>
+    <td>{{product.price}}</td>
+  </tr>
+  <tr>
+    <td><button (click)="deleteProduct(id)">Delete</button></td>
+    <td><button [routerLink]="['/list-product']">Cancel</button></td>
+  </tr>
+</table>

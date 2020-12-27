@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "angular-springboot-demo"
+  "defaultProject": "angular-springboot-demo",
+  "cli": {
+    "analytics": "f25878e9-ac5c-4f79-8542-c5a2727d8ab2"
+  }
 }

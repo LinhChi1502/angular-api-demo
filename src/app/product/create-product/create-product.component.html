@@ -1,0 +1,22 @@
+<h1>Create new product</h1>
+{{output}}
+<form (ngSubmit)="createNewProduct()">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" [(ngModel)]="product.name"></td>
+    </tr>
+    <tr>
+      <td>Des:</td>
+      <td><input type="text" name="des" [(ngModel)]="product.des"></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="text" name="price" [(ngModel)]="product.price"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Create</button></td>
+    </tr>
+  </table>
+</form>
