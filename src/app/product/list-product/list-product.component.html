@@ -4,6 +4,8 @@
     <th>Name</th>
     <th>Description</th>
     <th>Price</th>
+    <th>Image</th>
+    <th>Category</th>
     <th colspan="2">Action</th>
   </tr>
   <ng-container *ngFor="let product of products">
@@ -11,6 +13,8 @@
     <td><a [routerLink]="['/detail-product/', product.id]">{{product.name}}</a></td>
     <td>{{product.des}}</td>
     <td>{{product.price}}</td>
+    <td><img [src]="product.image" [height]="50"></td>
+    <td>{{product.category.categoryName}}</td>
     <td><a [routerLink]="['/edit-product/', product.id]">Edit</a></td>
     <td><a [routerLink]="['/delete-product', product.id]">Delete</a></td>
   </tr>

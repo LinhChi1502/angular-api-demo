@@ -17,6 +17,14 @@
     <td>{{product.price}}</td>
   </tr>
   <tr>
+    <td>Image:</td>
+    <td><img [src]="product.image" height="50"></td>
+  </tr>
+  <tr>
+    <td>Category:</td>
+    <td>{{product.category.categoryName}}</td>
+  </tr>
+  <tr>
     <td><button (click)="deleteProduct(id)">Delete</button></td>
     <td><button [routerLink]="['/list-product']">Cancel</button></td>
   </tr>

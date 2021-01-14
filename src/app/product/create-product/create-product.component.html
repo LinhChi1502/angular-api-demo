@@ -1,6 +1,6 @@
 <h1>Create new product</h1>
 {{output}}
-<form (ngSubmit)="createNewProduct()">
+<form (ngSubmit)="uploadImage()">
   <table>
     <tr>
       <td>Name:</td>
@@ -13,6 +13,16 @@
     <tr>
       <td>Price:</td>
       <td><input type="text" name="price" [(ngModel)]="product.price"></td>
+    </tr>
+    <tr>
+      <td>Image:</td>
+      <td><input type="file" name="image" (change)="upload($event)" accept="*.png.jpg"></td>
+    </tr>
+    <tr>
+      <td>Category:</td>
+      <select [(ngModel)]="product.category.id" name="category">
+        <option *ngFor="let category of categories" [value]="category.id">{{category.categoryName}}</option>
+      </select>
     </tr>
     <tr>
       <td></td>
